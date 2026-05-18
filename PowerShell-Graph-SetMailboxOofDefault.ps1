@@ -22,15 +22,15 @@ if ($Mailbox -notmatch "^[^@\s]+@[^@\s]+\.[^@\s]+$") {
 # =========================
 # HARD-CODED CREDENTIALS
 # =========================
-$TenantId    = "YOUR_TENANT_ID"
-$ClientId    = "YOUR_APP_ID"
-$ClientSecret= "YOUR_APP_SECRET"
+$TenantId    = "YOUR_TENANT_ID"     # TODO: Replace with your tenant ID
+$ClientId    = "YOUR_APP_ID"        # TODO: Replace with your app ID
+$ClientSecret= "YOUR_APP_SECRET"    # TODO: Replace with your app secret
 
 # =========================
 # OOF SETTINGS (EDIT HERE)
 # =========================
-$InternalMessage = "<html><body><p>A default Internal auto-reply message.</p></body></html>"
-$ExternalMessage = "<html><body><p>A default External auto-reply message.</p></body></html>"
+$InternalMessage = "<html><body><p>A default Internal auto-reply message.</p></body></html>" # TODO: Set this to an HTML or text message. 
+$ExternalMessage = "<html><body><p>A default External auto-reply message.</p></body></html>" # TODO: Set this to an HTML or text message.
 
 # =========================
 # GET ACCESS TOKEN
