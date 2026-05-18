@@ -4,6 +4,11 @@
 # It uses client credentials flow for authentication and updates the mailboxSettings for the specified user.    
 # Usage: .\PowerShell-Graph-SetMailboxOofDefault.ps1 -Mailbox user@contoso
 # Required permissions: MailboxSettings.ReadWrite (application permission with admin consent)   
+#
+# WARNING: This script contains hard-coded credentials and is intended for educational purposes only.
+#
+# Be sure to change all of the TODO sections before testing and test well before using in production..
+#
 # Note that this can be done in PowerShell also: 
 #    https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/set-mailboxautoreplyconfiguration?view=exchange-ps
 # Note this is an as-is sample for education. Test and make it your own before using in production and assume all responsiblities for its ussage.
@@ -59,8 +64,8 @@ catch {
 # =========================
 $Body = @{
     automaticRepliesSetting = @{
-        status = "disabled"                     # alwaysEnabled | scheduled | disabled
-        externalAudience = "all"                # none | contactsOnly | all
+        status = "disabled"                     # TODO:  Change to one of these: alwaysEnabled | scheduled | disabled
+        externalAudience = "all"                # TODO:  Change to one of these: none | contactsOnly | all
         internalReplyMessage = $InternalMessage
         externalReplyMessage = $ExternalMessage
     }
